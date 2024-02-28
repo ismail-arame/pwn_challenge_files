@@ -1,0 +1,9 @@
+FROM pwn.red/jail
+
+COPY --from=ubuntu:22.04 / /srv
+COPY shell /srv/app/run
+COPY flag.txt /srv/app/flag.txt
+RUN chmod 755 /srv/app/run
+
+# Set the JAIL_PORT environment variable to 9111
+ENV JAIL_PORT 9111
