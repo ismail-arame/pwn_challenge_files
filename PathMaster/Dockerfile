@@ -25,7 +25,7 @@ RUN rm /app/flag.txt
 USER node
 
 # Expose the port on which the application will run
-EXPOSE 3000
+EXPOSE 3333
 
 # Command to run the application
 CMD ["node", "app.js"]
