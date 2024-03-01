@@ -1,5 +1,5 @@
 # Use a minimal Node.js image as the base image
-FROM node:14-alpine
+FROM node:lts-alpine
 
 # Create and set the working directory
 WORKDIR /app
@@ -28,4 +28,4 @@ USER node
 EXPOSE 3333
 
 # Command to run the application
-CMD ["node", "app.js"]
+CMD ["node", "index.js"]
