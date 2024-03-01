@@ -51,6 +51,6 @@ function prepare(dir) {
   return path.resolve("./public/" + dir);
 }
 
-app.listen(3000, () => {
-  console.log("listening on 0.0.0.0:3000");
+app.listen(3333, () => {
+  console.log("listening on 0.0.0.0:3333");
 });
